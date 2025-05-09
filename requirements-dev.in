@@ -1,0 +1,58 @@
+# Import all core app dependencies
+-r requirements.in
+
+# ======================
+# Core testing tools
+# ======================
+pytest==8.3.5                # Unit and integration testing
+pytest-cov==6.1.1            # Coverage reporting
+pytest-benchmark==5.1.0      # Performance benchmarking
+pytest-html==4.1.1           # Optional: HTML test reports
+pytest-mock==3.14.0          # Mocking/stubbing dependencies in tests
+
+# ======================
+# Linting and code quality
+# ======================
+flake8==7.2.0                # Traditional linter
+flake8-docstrings==1.7.0     # Enforce docstring conventions (PEP257)
+pylint==3.3.6                # Deeper code analysis
+mypy==1.15.0                 # Static type checking
+black==25.1.0                # Code formatter
+isort==6.0.1                 # Import sorter
+ruff==0.11.6                 # Fast all-in-one linter/formatter (CI-friendly)
+
+# ======================
+# Code complexity
+# ======================
+xenon==0.9.3                 # Enforce maximum code complexity
+
+# ======================
+# Security tools
+# ======================
+bandit==1.8.3                # Scan for security issues
+
+# ======================
+# Documentation tools
+# ======================
+commitizen>=3.12
+mkdocs>=1.5
+mkdocs-material>=9.0
+
+# ======================
+# Build & Packaging
+# ======================
+build==1.2.2.post1           # Build Python packages (PEP 517)
+twine==6.1.0                 # Publish to PyPI
+bump-my-version==1.1.2       # Automated version bumping
+
+# ======================
+# Git & Dev tooling
+# ======================
+pre-commit==4.2.0            # Git hook manager
+
+# ======================
+# Type stubs for mypy (common packages)
+# ======================
+types-requests==2.32.0.20250328
+types-python-dateutil==2.9.0.20241206
+types-pyyaml==6.0.12.20250402

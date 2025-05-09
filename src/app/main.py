@@ -14,6 +14,7 @@ def add_numbers(a: int | float, b: int | float) -> int | float:
 
     Returns:
       Union[int, float]: The sum of the two numbers.
+
     """
     return a + b
 
@@ -26,6 +27,7 @@ class ExampleClass:
 
         Args:
             value (Any): The value to store.
+
         """
         self.value = value
 
@@ -36,5 +38,6 @@ class ExampleClass:
 
         Returns:
           Any: The stored value.
+
         """
         return self.value

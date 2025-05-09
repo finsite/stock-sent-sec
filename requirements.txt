@@ -4,9 +4,9 @@
 #
 #    pip-compile --output-file=requirements.txt requirements.in requirements.in
 #
-boto3==1.38.11
+boto3==1.38.13
     # via -r requirements.in
-botocore==1.38.11
+botocore==1.38.13
     # via
     #   boto3
     #   s3transfer
@@ -26,9 +26,9 @@ kiwisolver==1.4.8
     # via matplotlib
 loguru==0.7.3
     # via -r requirements.in
-matplotlib==3.10.1
+matplotlib==3.10.3
     # via -r requirements.in
-numpy==2.2.5
+numpy==1.26.4
     # via
     #   -r requirements.in
     #   contourpy
@@ -56,7 +56,7 @@ pytz==2025.2
     # via pandas
 s3transfer==0.12.0
     # via boto3
-scipy==1.15.2
+scipy==1.15.3
     # via -r requirements.in
 six==1.17.0
     # via python-dateutil

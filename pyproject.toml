@@ -3,9 +3,9 @@ requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "template_python"
+name = "stock-sent-sec"
 dynamic = ["version"]
-description = "A template for the default python project"
+description = "A repository for the stock-sent-sec python project"
 readme = "README.md"
 requires-python = ">=3.7"
 license = { text = "MIT" }
@@ -109,7 +109,7 @@ skip_covered = true
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "0.2.6"
+version = "0.0.0"
 tag_format = "v$version"
 update_changelog_on_bump = true
 changelog_file = "CHANGELOG.md"

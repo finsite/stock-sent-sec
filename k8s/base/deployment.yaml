@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stock-sent-sec
+  labels:
+    app: stock-sent-sec
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: stock-sent-sec
+  template:
+    metadata:
+      labels:
+        app: stock-sent-sec
+    spec:
+      containers:
+        - name: stock-sent-sec
+          image: stock-sent-sec:latest
+          ports:
+            - containerPort: 8080

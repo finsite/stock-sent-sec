@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {.Chart.Name: null}
+  labels:
+    app: {.Chart.Name: null}
+spec:
+  replicas: {.Values.replicaCount: null}
+  selector:
+    matchLabels:
+      app: {.Chart.Name: null}
+  template:
+    metadata:
+      labels:
+        app: {.Chart.Name: null}
+    spec:
+      containers:
+        - name: {.Chart.Name: null}
+          image: '{ .Values.image.repository }:{ .Values.image.tag }'
+          ports:
+            - containerPort: 8080

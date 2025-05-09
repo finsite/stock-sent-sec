@@ -1,0 +1,8 @@
+---
+replicaCount: 1
+image:
+  repository: myregistry.io/app
+  tag: latest
+service:
+  type: ClusterIP
+  port: 8080

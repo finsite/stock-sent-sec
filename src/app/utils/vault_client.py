@@ -9,7 +9,8 @@ logger = logging.getLogger(__name__)
 
 class VaultClient:
     """Handles interaction with HashiCorp Vault using AppRole
-    authentication."""
+    authentication.
+    """
 
     def __init__(self) -> None:
         self.vault_addr = os.getenv("VAULT_ADDR", "http://127.0.0.1:8200")
@@ -69,5 +70,6 @@ class VaultClient:
           default: str | None:  (Default value = None)
 
         Returns:
+
         """
         return self.secrets.get(key, default)

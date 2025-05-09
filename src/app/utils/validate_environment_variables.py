@@ -41,6 +41,7 @@ def validate_environment_variables(required_variables: list[str]) -> None:
       required_variables: list[str]:
 
     Returns:
+
     """
     # Check that required_variables is a list of strings
     if not isinstance(required_variables, list) or not all(

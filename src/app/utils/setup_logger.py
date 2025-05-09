@@ -33,6 +33,7 @@ def setup_logger(name: str | None = None, level: int = logging.INFO) -> logging.
       level: int:  (Default value = logging.INFO)
 
     Returns:
+
     """
     logger_name = name or "poller"
     logger = logging.getLogger(logger_name)

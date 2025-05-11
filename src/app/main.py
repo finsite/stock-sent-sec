@@ -1,43 +1,32 @@
-from typing import Any  # ✅ Fixes the error
+"""Main entry point for the Stock-Sent-SEC module.
+
+This script initializes the SEC filings sentiment analysis service,
+sets up logging, and starts consuming messages from the configured
+message queue.
+"""
+
+import os
+import sys
+
+# Add 'src/' to Python's module search path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from app.logger import setup_logger
+from app.queue_handler import consume_messages
+
+# Initialize logger
+logger = setup_logger(__name__)
 
 
-def add_numbers(a: int | float, b: int | float) -> int | float:
-    """Adds two numbers and returns the result.
+def main() -> None:
+    """Starts the SEC Sentiment Analysis Service.
 
-    Args:
-      a(Union[int): The first number.
-      b(Union[int): The second number.
-      a: int | float:
-      b: int | float:
-      a: int | float:
-      b: int | float:
-
-    Returns:
-      Union[int, float]: The sum of the two numbers.
-
+    This service listens to messages from a queue (RabbitMQ or SQS),
+    applies sentiment analysis to SEC filings, and publishes the results.
     """
-    return a + b
+    logger.info("Starting SEC Sentiment Analysis Service...")
+    consume_messages()
 
 
-class ExampleClass:
-    """A simple example class."""
-
-    def __init__(self, value: Any):
-        """Initializes ExampleClass.
-
-        Args:
-            value (Any): The value to store.
-
-        """
-        self.value = value
-
-    def get_value(self) -> Any:
-        """Retrieve the value assigned to the object.
-
-        Args:
-
-        Returns:
-          Any: The stored value.
-
-        """
-        return self.value
+if __name__ == "__main__":
+    main()

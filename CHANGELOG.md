@@ -7,6 +7,12 @@
 - Initial project structure cloned from template_python
 - Custom configuration and module setup for `stock-sent-sec`
 
+## v0.0.3 (2025-05-12)
+
+### Fix
+
+- **pollers**: verifying imports work
+
 ## v0.0.2 (2025-05-11)
 
 ### Fix

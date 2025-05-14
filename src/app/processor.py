@@ -29,7 +29,8 @@ def analyze_sentiment(data: dict[str, Any]) -> dict[str, Any]:
 
     try:
         analysis = TextBlob(content)
-        polarity = analysis.sentiment.polarity
+        sentiment: Any = analysis.sentiment  # ✅ Fix for Pyright
+        polarity = sentiment.polarity
 
         data["sentiment_score"] = polarity
         data["sentiment_label"] = classify_sentiment(polarity)

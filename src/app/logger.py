@@ -16,14 +16,13 @@ def setup_logger(name: str = "app") -> logging.Logger:
 
     Returns:
         logging.Logger: The configured logger instance.
+
     """
     logger: logging.Logger = logging.getLogger(name)
 
     if not logger.hasHandlers():
         handler = logging.StreamHandler()
-        formatter = logging.Formatter(
-            "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        )
+        formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
         handler.setFormatter(formatter)
         logger.addHandler(handler)
         logger.setLevel(logging.INFO)

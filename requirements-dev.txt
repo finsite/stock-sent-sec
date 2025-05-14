@@ -20,9 +20,9 @@ bandit==1.8.3
     # via -r requirements-dev.in
 black==25.1.0
     # via -r requirements-dev.in
-boto3==1.38.13
+boto3==1.38.15
     # via -r D:\git\stock-sent-sec\requirements.in
-botocore==1.38.13
+botocore==1.38.15
     # via
     #   boto3
     #   s3transfer
@@ -48,6 +48,7 @@ click==8.2.0
     #   black
     #   bump-my-version
     #   mkdocs
+    #   nltk
     #   rich-click
 colorama==0.4.6
     # via
@@ -61,6 +62,7 @@ colorama==0.4.6
     #   pylint
     #   pytest
     #   radon
+    #   tqdm
 commitizen==4.7.0
     # via -r requirements-dev.in
 contourpy==1.3.2
@@ -126,13 +128,15 @@ jmespath==1.0.1
     # via
     #   boto3
     #   botocore
+joblib==1.5.0
+    # via nltk
 keyring==25.6.0
     # via twine
 kiwisolver==1.4.8
     # via matplotlib
 loguru==0.7.3
     # via -r D:\git\stock-sent-sec\requirements.in
-mando==0.8.2
+mando==0.7.1
     # via radon
 markdown==3.8
     # via
@@ -163,7 +167,7 @@ mkdocs==1.6.1
     #   mkdocs-material
 mkdocs-get-deps==0.2.0
     # via mkdocs
-mkdocs-material==9.6.13
+mkdocs-material==9.6.14
     # via -r requirements-dev.in
 mkdocs-material-extensions==1.3.1
     # via mkdocs-material
@@ -179,6 +183,8 @@ mypy-extensions==1.1.0
     #   mypy
 nh3==0.2.21
     # via readme-renderer
+nltk==3.9.1
+    # via textblob
 nodeenv==1.9.1
     # via pre-commit
 numpy==1.26.4
@@ -231,7 +237,7 @@ pydantic==2.11.4
     # via
     #   bump-my-version
     #   pydantic-settings
-pydantic-core==2.34.1
+pydantic-core==2.33.2
     # via pydantic
 pydantic-settings==2.9.1
     # via bump-my-version
@@ -244,7 +250,7 @@ pygments==2.19.1
     #   mkdocs-material
     #   readme-renderer
     #   rich
-pylint==3.3.7
+pylint==3.3.6
     # via -r requirements-dev.in
 pymdown-extensions==10.15
     # via mkdocs-material
@@ -294,7 +300,7 @@ pyyaml==6.0.2
     #   pymdown-extensions
     #   pyyaml-env-tag
     #   xenon
-pyyaml-env-tag==1.0
+pyyaml-env-tag==1.1
     # via mkdocs
 questionary==2.1.0
     # via
@@ -304,6 +310,8 @@ radon==6.0.1
     # via xenon
 readme-renderer==44.0
     # via twine
+regex==2024.11.6
+    # via nltk
 requests==2.32.3
     # via
     #   id
@@ -323,7 +331,7 @@ rich==14.0.0
     #   twine
 rich-click==1.8.8
     # via bump-my-version
-ruff==0.11.9
+ruff==0.11.6
     # via -r requirements-dev.in
 s3transfer==0.12.0
     # via boto3
@@ -341,11 +349,15 @@ stevedore==5.4.1
     # via bandit
 termcolor==2.5.0
     # via commitizen
+textblob==0.19.0
+    # via -r D:\git\stock-sent-sec\requirements.in
 tomlkit==0.13.2
     # via
     #   bump-my-version
     #   commitizen
     #   pylint
+tqdm==4.67.1
+    # via nltk
 twine==6.1.0
     # via -r requirements-dev.in
 types-python-dateutil==2.9.0.20241206

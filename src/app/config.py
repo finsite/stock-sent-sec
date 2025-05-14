@@ -21,6 +21,7 @@ def get_config_value(key: str, default: str | None = None) -> str:
 
     Returns:
         str: The resolved value.
+
     """
     val = _vault.get(key, os.getenv(key))
     if val is None:
@@ -34,12 +35,14 @@ def get_config_value(key: str, default: str | None = None) -> str:
 # 📬 Queue Configuration
 # ------------------------------------------------------------------------------
 
+
 def get_queue_type() -> str:
     """Returns the configured queue type: 'rabbitmq' or 'sqs'."""
     return get_config_value("QUEUE_TYPE", "rabbitmq")
 
 
 # RabbitMQ Configuration
+
 
 def get_rabbitmq_host() -> str:
     """RabbitMQ hostname."""
@@ -80,6 +83,7 @@ def get_rabbitmq_routing_key() -> str:
 
 
 # SQS Configuration
+
 
 def get_sqs_queue_url() -> str:
     """Amazon SQS queue URL."""

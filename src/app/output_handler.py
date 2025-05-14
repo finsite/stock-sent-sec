@@ -25,6 +25,7 @@ def send_to_output(data: dict[str, Any]) -> None:
 
     Returns:
         None
+
     """
     try:
         formatted_output: str = json.dumps(data, indent=4)

@@ -11,3 +11,6 @@ boto3>=1.28.0,<2.0.0  # If using AWS SQS
 # Logging & Environment Management
 loguru>=0.7.0  # Enhanced logging
 python-dotenv>=1.0.0  # Environment variable management
+
+# Sentiment Analysis
+textblob>=0.18.0  # News sentiment engine (requires corpus download)

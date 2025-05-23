@@ -115,3 +115,6 @@ update_changelog_on_bump = true
 changelog_file = "CHANGELOG.md"
 bump_message = "chore(release): v$current_version → v$new_version"
 major_version_zero = true
+version_files = [
+  "src/app/__init__.py"
+]

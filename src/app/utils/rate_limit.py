@@ -23,8 +23,10 @@ class RateLimiter:
     Allows a specified number of requests within a time window.
 
     Args:
+    ----
 
     Returns:
+    -------
 
     """
 
@@ -65,14 +67,18 @@ class RateLimiter:
             None
 
         Args:
+        ----
           context: str:  (Default value = "RateLimiter")
 
         Returns:
+        -------
 
         Args:
+        ----
           context: str:  (Default value = "RateLimiter")
 
         Returns:
+        -------
 
         """
         with self._lock:  # type: ignore # type: threading.Lock

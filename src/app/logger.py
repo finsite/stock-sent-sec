@@ -1,4 +1,5 @@
 import logging
+import os
 
 
 def setup_logger(name: str = "app") -> logging.Logger:
@@ -9,12 +10,14 @@ def setup_logger(name: str = "app") -> logging.Logger:
     with the format:
         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 
-    The default log level is INFO.
+    The default log level is controlled via the LOG_LEVEL environment variable.
 
     Args:
+    ----
         name (str): The name of the logger. Defaults to "app".
 
     Returns:
+    -------
         logging.Logger: The configured logger instance.
 
     """
@@ -22,9 +25,19 @@ def setup_logger(name: str = "app") -> logging.Logger:
 
     if not logger.hasHandlers():
         handler = logging.StreamHandler()
-        formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+        log_format = os.getenv("LOG_FORMAT", "plain").lower()
+
+        if log_format == "json":
+            formatter = logging.Formatter(
+                '{"timestamp":"%(asctime)s","name":"%(name)s","level":"%(levelname)s","message":"%(message)s"}'
+            )
+        else:
+            formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+
         handler.setFormatter(formatter)
         logger.addHandler(handler)
-        logger.setLevel(logging.INFO)
+
+        log_level = os.getenv("LOG_LEVEL", "INFO").upper()
+        logger.setLevel(getattr(logging, log_level, logging.INFO))
 
     return logger

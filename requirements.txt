@@ -4,13 +4,13 @@
 #
 #    pip-compile --output-file=requirements.txt requirements.in requirements.in
 #
-boto3==1.38.15
+boto3==1.38.23
     # via -r requirements.in
-botocore==1.38.15
+botocore==1.38.23
     # via
     #   boto3
     #   s3transfer
-click==8.2.0
+click==8.2.1
     # via nltk
 colorama==0.4.6
     # via
@@ -27,7 +27,7 @@ jmespath==1.0.1
     # via
     #   boto3
     #   botocore
-joblib==1.5.0
+joblib==1.5.1
     # via nltk
 kiwisolver==1.4.8
     # via matplotlib
@@ -65,7 +65,7 @@ pytz==2025.2
     # via pandas
 regex==2024.11.6
     # via nltk
-s3transfer==0.12.0
+s3transfer==0.13.0
     # via boto3
 scipy==1.15.3
     # via -r requirements.in

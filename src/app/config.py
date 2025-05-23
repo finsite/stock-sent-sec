@@ -13,14 +13,21 @@ _vault = VaultClient()
 
 
 def get_config_value(key: str, default: str | None = None) -> str:
-    """Retrieve a configuration value from Vault, environment variable, or default.
+    """Retrieve a configuration value from Vault, environment variable, or
+    default.
 
     Args:
-        key (str): Configuration key to fetch.
-        default (Optional[str]): Fallback value if key is not found.
+    ----
+      key(str): Configuration key to fetch.
+      default(Optional[str]): Fallback value if key is not found.
+      key: str:
+      default: str | None:  (Default value = None)
+      key: str:
+      default: str | None:  (Default value = None)
 
     Returns:
-        str: The resolved value.
+    -------
+      str: The resolved value.
 
     """
     val = _vault.get(key, os.getenv(key))
@@ -37,13 +44,11 @@ def get_config_value(key: str, default: str | None = None) -> str:
 
 
 def get_queue_type() -> str:
-    """Returns the configured queue type: 'rabbitmq' or 'sqs'."""
+    """"""
     return get_config_value("QUEUE_TYPE", "rabbitmq")
 
 
 # RabbitMQ Configuration
-
-
 def get_rabbitmq_host() -> str:
     """RabbitMQ hostname."""
     return get_config_value("RABBITMQ_HOST", "localhost")
@@ -83,11 +88,34 @@ def get_rabbitmq_routing_key() -> str:
 
 
 # SQS Configuration
-
-
 def get_sqs_queue_url() -> str:
     """Amazon SQS queue URL."""
     return get_config_value("SQS_QUEUE_URL", "")
+
+
+def get_rabbitmq_queue() -> str:
+    """RabbitMQ queue name."""
+    return get_config_value("RABBITMQ_QUEUE", "candlestick_queue")
+
+
+def get_dlq_name() -> str:
+    """Dead-letter queue name (if configured)."""
+    return get_config_value("DLQ_NAME", "candlestick_dlq")
+
+
+def get_polling_interval() -> int:
+    """Polling interval (in seconds) between batch pulls."""
+    return int(get_config_value("POLLING_INTERVAL", "60"))
+
+
+def get_batch_size() -> int:
+    """Batch size for message polling or processing."""
+    return int(get_config_value("BATCH_SIZE", "100"))
+
+
+def get_output_mode() -> str:
+    """Output mode: 'queue' or 'log' (for dry runs)."""
+    return get_config_value("OUTPUT_MODE", "queue")
 
 
 def get_sqs_region() -> str:

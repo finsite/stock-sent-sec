@@ -62,6 +62,7 @@ class VaultClient:
         """Retrieve a secret by key.
 
         Args:
+        ----
           key(str): The secret key to retrieve.
           default(Optional[str]): Default value to return if key not found.
           key: str:
@@ -70,6 +71,7 @@ class VaultClient:
           default: str | None:  (Default value = None)
 
         Returns:
+        -------
 
         """
         return self.secrets.get(key, default)

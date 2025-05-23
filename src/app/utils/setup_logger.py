@@ -23,16 +23,20 @@ def setup_logger(name: str | None = None, level: int = logging.INFO) -> logging.
         logging.Logger: Configured logger instance.
 
     Args:
+    ----
       name: str | None:  (Default value = None)
       level: int:  (Default value = logging.INFO)
 
     Returns:
+    -------
 
     Args:
+    ----
       name: str | None:  (Default value = None)
       level: int:  (Default value = logging.INFO)
 
     Returns:
+    -------
 
     """
     logger_name = name or "poller"

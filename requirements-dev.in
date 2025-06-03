@@ -56,4 +56,4 @@ pre-commit==4.2.0            # Git hook manager
 types-requests==2.32.0.20250328
 types-python-dateutil==2.9.0.20241206
 types-pyyaml==6.0.12.20250402
-termcolor==2.5.0
+termcolor==2.3.0

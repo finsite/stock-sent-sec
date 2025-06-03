@@ -20,9 +20,9 @@ bandit==1.8.3
     # via -r requirements-dev.in
 black==25.1.0
     # via -r requirements-dev.in
-boto3==1.38.23
+boto3==1.38.28
     # via -r D:\git\stock-sent-sec\requirements.in
-botocore==1.38.23
+botocore==1.38.28
     # via
     #   boto3
     #   s3transfer
@@ -71,7 +71,7 @@ coverage[toml]==7.8.2
     # via pytest-cov
 cycler==0.12.1
     # via matplotlib
-decli==0.6.2
+decli==0.6.3
     # via commitizen
 dill==0.4.0
     # via pylint
@@ -87,7 +87,7 @@ flake8==7.2.0
     #   flake8-docstrings
 flake8-docstrings==1.7.0
     # via -r requirements-dev.in
-fonttools==4.58.0
+fonttools==4.58.1
     # via matplotlib
 ghp-import==2.1.0
     # via mkdocs
@@ -175,7 +175,7 @@ more-itertools==10.7.0
     # via
     #   jaraco-classes
     #   jaraco-functools
-mypy==1.15.0
+mypy==1.16.0
     # via -r requirements-dev.in
 mypy-extensions==1.1.0
     # via
@@ -258,7 +258,7 @@ pyparsing==3.2.3
     # via matplotlib
 pyproject-hooks==1.2.0
     # via build
-pytest==8.3.5
+pytest==8.4.0
     # via
     #   -r requirements-dev.in
     #   pytest-benchmark
@@ -274,7 +274,7 @@ pytest-html==4.1.1
     # via -r requirements-dev.in
 pytest-metadata==3.1.1
     # via pytest-html
-pytest-mock==3.14.0
+pytest-mock==3.14.1
     # via -r requirements-dev.in
 python-dateutil==2.9.0.post0
     # via
@@ -331,7 +331,7 @@ rich==14.0.0
     #   twine
 rich-click==1.8.9
     # via bump-my-version
-ruff==0.11.11
+ruff==0.11.12
     # via -r requirements-dev.in
 s3transfer==0.13.0
     # via boto3
@@ -364,9 +364,9 @@ types-python-dateutil==2.9.0.20250516
     # via -r requirements-dev.in
 types-pyyaml==6.0.12.20250516
     # via -r requirements-dev.in
-types-requests==2.32.0.20250515
+types-requests==2.32.0.20250602
     # via -r requirements-dev.in
-typing-extensions==4.13.2
+typing-extensions==4.14.0
     # via
     #   mypy
     #   pydantic

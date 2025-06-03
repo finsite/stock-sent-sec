@@ -7,6 +7,12 @@
 - Initial project structure cloned from template_python
 - Custom configuration and module setup for `stock-sent-sec`
 
+## v0.1.2 (2025-06-03)
+
+### Fix
+
+- **deps**: standardize termcolor to 2.5.0
+
 ## v0.1.1 (2025-06-03)
 
 ### Fix

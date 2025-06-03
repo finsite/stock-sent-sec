@@ -7,6 +7,12 @@
 - Initial project structure cloned from template_python
 - Custom configuration and module setup for `stock-sent-sec`
 
+## v0.1.0 (2025-05-23)
+
+### Feat
+
+- **versioning**: enforce version consistency across pyproject.toml, __init__.py, and changelog
+
 ## v0.0.5 (2025-05-14)
 
 ### Fix

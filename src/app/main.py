@@ -20,7 +20,7 @@ logger = setup_logger(__name__)
 
 def main() -> None:
     """Starts the SEC Sentiment Analysis Service.
-    
+
     This service listens to messages from a queue (RabbitMQ or SQS),
     applies sentiment analysis to SEC filings, and publishes the results.
 

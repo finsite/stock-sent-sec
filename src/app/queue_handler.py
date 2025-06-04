@@ -76,6 +76,7 @@ def consume_rabbitmq() -> None:
         :param body: type body: bytes :
         :param body: type body: bytes :
         :param body: bytes:
+        :param body: bytes:
         :param body: bytes: 
 
         """

@@ -12,16 +12,20 @@ logger = setup_logger(__name__)
 
 def analyze_sentiment(data: dict[str, Any]) -> dict[str, Any]:
     """Analyzes sentiment of an SEC filing section (e.g., MD&A, risk factors).
-
+    
     Args:
     ----
         data (dict[str, Any]): A dictionary with at least a 'content' field
                                representing the text from an SEC filing.
-
+    
     Returns:
     -------
         dict[str, Any]: Original data with 'sentiment_score' and 'sentiment_label' added.
 
+    :param data: dict[str: 
+    :param Any]: 
+
+    
     """
     content = data.get("content")
 
@@ -51,15 +55,18 @@ def analyze_sentiment(data: dict[str, Any]) -> dict[str, Any]:
 
 def classify_sentiment(score: float) -> str:
     """Classifies polarity score into sentiment label.
-
+    
     Args:
     ----
         score (float): Polarity score from -1 to 1.
-
+    
     Returns:
     -------
         str: Sentiment label - 'positive', 'neutral', or 'negative'.
 
+    :param score: float: 
+
+    
     """
     if score > 0.1:
         return "positive"

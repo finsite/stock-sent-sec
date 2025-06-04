@@ -22,10 +22,11 @@ def analyze_sentiment(data: dict[str, Any]) -> dict[str, Any]:
     -------
         dict[str, Any]: Original data with 'sentiment_score' and 'sentiment_label' added.
 
+    :param data: dict[str:
+    :param Any: 
     :param data: dict[str: 
     :param Any]: 
 
-    
     """
     content = data.get("content")
 
@@ -64,9 +65,9 @@ def classify_sentiment(score: float) -> str:
     -------
         str: Sentiment label - 'positive', 'neutral', or 'negative'.
 
+    :param score: float:
     :param score: float: 
 
-    
     """
     if score > 0.1:
         return "positive"

@@ -25,7 +25,6 @@ def main() -> None:
     applies sentiment analysis to SEC filings, and publishes the results.
 
 
-    
     """
     logger.info("Starting SEC Sentiment Analysis Service...")
     consume_messages()

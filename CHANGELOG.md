@@ -7,6 +7,16 @@
 - Initial project structure cloned from template_python
 - Custom configuration and module setup for `stock-sent-sec`
 
+## v0.2.0 (2025-06-05)
+
+### Feat
+
+- **sync**: add full sync_if_needed.py script with logging and Makefile support
+
+### Fix
+
+- **files**: Address workflows timing out issues
+
 ## v0.1.3 (2025-06-03)
 
 ### Fix

@@ -7,6 +7,12 @@
 - Initial project structure cloned from template_python
 - Custom configuration and module setup for `stock-sent-sec`
 
+## v0.2.1 (2025-06-06)
+
+### Fix
+
+- **deps**: recompile requirements to resolve dependency conflicts
+
 ## v0.2.0 (2025-06-05)
 
 ### Feat

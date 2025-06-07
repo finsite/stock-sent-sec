@@ -1,4 +1,8 @@
-## Unreleased
+## v0.2.2 (2025-06-07)
+
+### Fix
+
+- **files**: verify pyproject.toml has all required fields
 
 ## v0.2.1 (2025-06-06)
 

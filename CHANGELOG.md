@@ -1,9 +1,5 @@
 ## Unreleased
 
-### Fix
-
-- **deps**: recompile requirements to resolve dependency conflicts
-
 ## v0.2.1 (2025-06-06)
 
 ### Fix

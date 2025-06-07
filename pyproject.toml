@@ -109,12 +109,10 @@ skip_covered = true
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "0.2.0"
+version = "0.2.1"
 tag_format = "v$version"
 update_changelog_on_bump = true
 changelog_file = "CHANGELOG.md"
-bump_message = "chore(release): v$current_version → v$new_version"
-major_version_zero = true
 version_files = [
   "src/app/__init__.py"
 ]

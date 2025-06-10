@@ -1,7 +1,7 @@
 # Stock Sentiment Poller
 
-This repository gathers sentiment data related to stock markets from a variety of sources such as
-news feeds, social media, and opinion analysis APIs.
+This repository gathers sentiment data related to stock markets from a variety
+of sources such as news feeds, social media, and opinion analysis APIs.
 
 ## Features
 

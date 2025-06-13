@@ -1,3 +1,9 @@
+## v0.2.5 (2025-06-13)
+
+### Refactor
+
+- standardize config, vault client, and test structure across all repos
+
 ## v0.2.4 (2025-06-11)
 
 ### Refactor

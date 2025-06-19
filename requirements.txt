@@ -79,7 +79,7 @@ tqdm==4.67.1
     # via nltk
 tzdata==2025.2
     # via pandas
-urllib3==2.4.0
+urllib3==2.5.0
     # via botocore
 win32-setctime==1.2.0
     # via loguru

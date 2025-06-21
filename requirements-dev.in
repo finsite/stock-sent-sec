@@ -57,3 +57,7 @@ types-requests==2.32.0.20250328
 types-python-dateutil==2.9.0.20241206
 types-pyyaml==6.0.12.20250402
 termcolor==2.3.0
+
+# Security: Fix pip-audit vulnerabilities
+requests>=2.32.4
+urllib3>=2.5.0

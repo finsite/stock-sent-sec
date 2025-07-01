@@ -2,7 +2,8 @@
 
 ### Feat
 
-- add SQLAlchemy and Tenacity to all repos with output dispatching and retry logic
+- add SQLAlchemy and Tenacity to all repos with output dispatching and retry
+  logic
 
 ## v0.3.0 (2025-06-22)
 

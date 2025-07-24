@@ -43,7 +43,7 @@ matplotlib==3.10.3
     # via -r requirements.in
 nltk==3.9.1
     # via textblob
-numpy==1.26.4
+numpy==2.3.2
     # via
     #   -r requirements.in
     #   contourpy
@@ -81,7 +81,7 @@ scipy==1.16.0
     # via -r requirements.in
 six==1.17.0
     # via python-dateutil
-tenacity==8.5.0
+tenacity==9.1.2
     # via -r requirements.in
 textblob==0.19.0
     # via -r requirements.in

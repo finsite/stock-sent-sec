@@ -189,7 +189,7 @@ nltk==3.9.1
     # via textblob
 nodeenv==1.9.1
     # via pre-commit
-numpy==1.26.4
+numpy==2.3.2
     # via
     #   -r D:\git\stock-sent-sec\requirements.in
     #   contourpy
@@ -353,9 +353,9 @@ snowballstemmer==3.0.1
     # via pydocstyle
 stevedore==5.4.1
     # via bandit
-tenacity==8.5.0
+tenacity==9.1.2
     # via -r D:\git\stock-sent-sec\requirements.in
-termcolor==2.3.0
+termcolor==3.1.0
     # via
     #   -r requirements-dev.in
     #   commitizen

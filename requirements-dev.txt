@@ -16,7 +16,7 @@ babel==2.17.0
     # via mkdocs-material
 backrefs==5.9
     # via mkdocs-material
-bandit==1.8.3
+bandit==1.8.6
     # via -r requirements-dev.in
 black==25.1.0
     # via -r requirements-dev.in
@@ -30,7 +30,7 @@ bracex==2.6
     # via wcmatch
 build==1.2.2.post1
     # via -r requirements-dev.in
-bump-my-version==1.1.2
+bump-my-version==1.2.1
     # via -r requirements-dev.in
 certifi==2025.7.14
     # via
@@ -81,7 +81,7 @@ docutils==0.21.2
     # via readme-renderer
 filelock==3.18.0
     # via virtualenv
-flake8==7.2.0
+flake8==7.3.0
     # via
     #   -r requirements-dev.in
     #   flake8-docstrings
@@ -138,7 +138,7 @@ kiwisolver==1.4.8
     # via matplotlib
 loguru==0.7.3
     # via -r D:\git\stock-sent-sec\requirements.in
-mando==0.7.1
+mando==0.8.2
     # via radon
 markdown==3.8.2
     # via
@@ -177,7 +177,7 @@ more-itertools==10.7.0
     # via
     #   jaraco-classes
     #   jaraco-functools
-mypy==1.15.0
+mypy==1.17.0
     # via -r requirements-dev.in
 mypy-extensions==1.1.0
     # via
@@ -207,7 +207,7 @@ packaging==25.0
     #   twine
 paginate==0.5.7
     # via mkdocs-material
-pandas==2.2.3
+pandas==2.3.1
     # via -r D:\git\stock-sent-sec\requirements.in
 pathspec==0.12.1
     # via
@@ -238,26 +238,26 @@ prompt-toolkit==3.0.51
     # via questionary
 py-cpuinfo==9.0.0
     # via pytest-benchmark
-pycodestyle==2.13.0
+pycodestyle==2.14.0
     # via flake8
 pydantic==2.11.7
     # via
     #   bump-my-version
     #   pydantic-settings
-pydantic-core==2.33.2
+pydantic-core==2.37.2
     # via pydantic
 pydantic-settings==2.10.1
     # via bump-my-version
 pydocstyle==6.3.0
     # via flake8-docstrings
-pyflakes==3.3.2
+pyflakes==3.4.0
     # via flake8
 pygments==2.19.2
     # via
     #   mkdocs-material
     #   readme-renderer
     #   rich
-pylint==3.3.6
+pylint==3.3.7
     # via -r requirements-dev.in
 pymdown-extensions==10.16
     # via mkdocs-material
@@ -265,7 +265,7 @@ pyparsing==3.2.3
     # via matplotlib
 pyproject-hooks==1.2.0
     # via build
-pytest==8.3.5
+pytest==8.4.1
     # via
     #   -r requirements-dev.in
     #   pytest-benchmark
@@ -275,13 +275,13 @@ pytest==8.3.5
     #   pytest-mock
 pytest-benchmark==5.1.0
     # via -r requirements-dev.in
-pytest-cov==6.1.1
+pytest-cov==6.2.1
     # via -r requirements-dev.in
 pytest-html==4.1.1
     # via -r requirements-dev.in
 pytest-metadata==3.1.1
     # via pytest-html
-pytest-mock==3.14.0
+pytest-mock==3.14.1
     # via -r requirements-dev.in
 python-dateutil==2.9.0.post0
     # via
@@ -340,7 +340,7 @@ rich==14.1.0
     #   twine
 rich-click==1.8.9
     # via bump-my-version
-ruff==0.11.6
+ruff==0.12.5
     # via -r requirements-dev.in
 s3transfer==0.13.1
     # via boto3
@@ -358,7 +358,7 @@ stevedore==5.4.1
     # via bandit
 tenacity==8.5.0
     # via -r D:\git\stock-sent-sec\requirements.in
-termcolor==2.3.0
+termcolor==2.5.0
     # via
     #   -r requirements-dev.in
     #   commitizen
@@ -373,11 +373,11 @@ tqdm==4.67.1
     # via nltk
 twine==6.1.0
     # via -r requirements-dev.in
-types-python-dateutil==2.9.0.20241206
+types-python-dateutil==2.9.0.20250708
     # via -r requirements-dev.in
-types-pyyaml==6.0.12.20250402
+types-pyyaml==6.0.12.20250516
     # via -r requirements-dev.in
-types-requests==2.32.0.20250328
+types-requests==2.32.4.20250611
     # via -r requirements-dev.in
 typing-extensions==4.14.1
     # via

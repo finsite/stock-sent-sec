@@ -15,7 +15,7 @@ jobs:
           image: stock-app:latest
           format: spdx-json
           output-file: sbom.spdx.json
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         with:
           name: sbom-image
           path: sbom.spdx.json

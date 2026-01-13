@@ -79,7 +79,7 @@ distlib==0.4.0
     # via virtualenv
 docutils==0.21.2
     # via readme-renderer
-filelock==3.18.0
+filelock==3.20.3
     # via virtualenv
 flake8==7.2.0
     # via

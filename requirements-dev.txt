@@ -265,7 +265,7 @@ pyparsing==3.2.3
     # via matplotlib
 pyproject-hooks==1.2.0
     # via build
-pytest==8.3.5
+pytest==9.0.3
     # via
     #   -r requirements-dev.in
     #   pytest-benchmark

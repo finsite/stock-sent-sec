@@ -75,7 +75,7 @@ pytz==2025.2
     # via pandas
 regex==2024.11.6
     # via nltk
-requests==2.32.4
+requests==2.33.0
     # via -r requirements.in
 s3transfer==0.13.1
     # via boto3

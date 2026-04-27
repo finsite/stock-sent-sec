@@ -41,7 +41,7 @@ loguru==0.7.3
     # via -r requirements.in
 matplotlib==3.10.3
     # via -r requirements.in
-nltk==3.9.1
+nltk==3.9.4
     # via textblob
 numpy==1.26.4
     # via

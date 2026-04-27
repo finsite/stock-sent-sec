@@ -319,7 +319,7 @@ readme-renderer==44.0
     # via twine
 regex==2024.11.6
     # via nltk
-requests==2.32.4
+requests==2.33.0
     # via
     #   -r D:\git\stock-sent-sec\requirements.in
     #   -r requirements-dev.in

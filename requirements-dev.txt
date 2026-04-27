@@ -289,7 +289,7 @@ python-dateutil==2.9.0.post0
     #   ghp-import
     #   matplotlib
     #   pandas
-python-dotenv==1.1.1
+python-dotenv==1.2.2
     # via
     #   -r D:\git\stock-sent-sec\requirements.in
     #   pydantic-settings

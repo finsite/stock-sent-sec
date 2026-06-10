@@ -10,11 +10,11 @@ anyio==4.9.0
     # via httpx
 argcomplete==3.6.2
     # via commitizen
-astroid==3.3.11
+astroid==4.1.2
     # via pylint
 babel==2.17.0
     # via mkdocs-material
-backrefs==5.9
+backrefs==7.0
     # via mkdocs-material
 bandit==1.8.3
     # via -r requirements-dev.in
@@ -32,7 +32,7 @@ build==1.2.2.post1
     # via -r requirements-dev.in
 bump-my-version==1.1.2
     # via -r requirements-dev.in
-certifi==2025.7.14
+certifi==2026.5.20
     # via
     #   httpcore
     #   httpx
@@ -106,11 +106,11 @@ idna==3.10
     #   anyio
     #   httpx
     #   requests
-importlib-metadata==8.7.0
+importlib-metadata==9.0.0
     # via commitizen
 iniconfig==2.1.0
     # via pytest
-isort==6.0.1
+isort==8.0.1
     # via
     #   -r requirements-dev.in
     #   pylint
@@ -145,7 +145,7 @@ markdown==3.8.2
     #   mkdocs
     #   mkdocs-material
     #   pymdown-extensions
-markdown-it-py==3.0.0
+markdown-it-py==4.2.0
     # via rich
 markupsafe==3.0.2
     # via
@@ -173,11 +173,11 @@ mkdocs-material==9.6.16
     # via -r requirements-dev.in
 mkdocs-material-extensions==1.3.1
     # via mkdocs-material
-more-itertools==10.7.0
+more-itertools==11.1.0
     # via
     #   jaraco-classes
     #   jaraco-functools
-mypy==1.15.0
+mypy==2.1.0
     # via -r requirements-dev.in
 mypy-extensions==1.1.0
     # via
@@ -189,14 +189,14 @@ nltk==3.9.1
     # via textblob
 nodeenv==1.9.1
     # via pre-commit
-numpy==1.26.4
+numpy==2.4.6
     # via
     #   -r D:\git\stock-sent-sec\requirements.in
     #   contourpy
     #   matplotlib
     #   pandas
     #   scipy
-packaging==25.0
+packaging==26.2
     # via
     #   black
     #   build
@@ -207,13 +207,13 @@ packaging==25.0
     #   twine
 paginate==0.5.7
     # via mkdocs-material
-pandas==2.2.3
+pandas==3.0.3
     # via -r D:\git\stock-sent-sec\requirements.in
-pathspec==0.12.1
+pathspec==1.1.1
     # via
     #   black
     #   mkdocs
-pbr==6.1.1
+pbr==7.0.3
     # via stevedore
 pika==1.3.2
     # via -r D:\git\stock-sent-sec\requirements.in
@@ -257,7 +257,7 @@ pygments==2.19.2
     #   mkdocs-material
     #   readme-renderer
     #   rich
-pylint==3.3.6
+pylint==4.0.5
     # via -r requirements-dev.in
 pymdown-extensions==10.16
     # via mkdocs-material
@@ -275,7 +275,7 @@ pytest==8.3.5
     #   pytest-mock
 pytest-benchmark==5.1.0
     # via -r requirements-dev.in
-pytest-cov==6.1.1
+pytest-cov==7.1.0
     # via -r requirements-dev.in
 pytest-html==4.1.1
     # via -r requirements-dev.in
@@ -293,7 +293,7 @@ python-dotenv==1.1.1
     # via
     #   -r D:\git\stock-sent-sec\requirements.in
     #   pydantic-settings
-pytz==2025.2
+pytz==2026.2
     # via pandas
 pywin32-ctypes==0.2.3
     # via keyring
@@ -315,9 +315,9 @@ questionary==2.1.0
     #   commitizen
 radon==6.0.1
     # via xenon
-readme-renderer==44.0
+readme-renderer==45.0
     # via twine
-regex==2024.11.6
+regex==2026.5.9
     # via nltk
 requests==2.32.4
     # via
@@ -332,7 +332,7 @@ requests-toolbelt==1.0.0
     # via twine
 rfc3986==2.0.0
     # via twine
-rich==14.1.0
+rich==15.0.0
     # via
     #   bandit
     #   bump-my-version
@@ -356,9 +356,9 @@ snowballstemmer==3.0.1
     # via pydocstyle
 stevedore==5.4.1
     # via bandit
-tenacity==8.5.0
+tenacity==9.1.4
     # via -r D:\git\stock-sent-sec\requirements.in
-termcolor==2.3.0
+termcolor==3.3.0
     # via
     #   -r requirements-dev.in
     #   commitizen
@@ -391,7 +391,7 @@ typing-inspection==0.4.1
     # via
     #   pydantic
     #   pydantic-settings
-tzdata==2025.2
+tzdata==2026.2
     # via pandas
 urllib3==2.5.0
     # via
@@ -413,7 +413,7 @@ win32-setctime==1.2.0
     # via loguru
 xenon==0.9.3
     # via -r requirements-dev.in
-zipp==3.23.0
+zipp==4.1.0
     # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
